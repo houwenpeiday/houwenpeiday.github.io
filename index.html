@@ -1,102 +1,592 @@
-<!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
 <head>
-	<title>Our Love Story</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital-7_mono.ttf') format("truetype");
-		}
-	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>兔妮与呆呆兽</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- heart effect -->
+    <link href="css/heart.css" rel="stylesheet" type="text/css">
+
+    <link href="css/hint-min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/swatchbook.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+
+
+
+    <!-- Fonts -->
+	<!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/color.css" rel="stylesheet">
+	<!-- Han CSS & JS -->
+	<link rel="stylesheet" media="all" href="http://cdnjs.cloudflare.com/ajax/libs/Han/3.0.0/han.min.css">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/Han/3.0.0/han.min.js"></script>
+	<!-- imp photogallary -->
+	<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
+
 </head>
 
-<body>
-	<div id="mainDiv">
-		<div id="content">
-			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+<body data-spy="scroll">
+
+<div class="container">
+			<ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<a class="gn-icon gn-icon-menu"><span>菜单</span></a>
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+								<li>
+									<a href="#about" class="gn-icon gn-icon-download">关于</a>
+								</li>
+								<li><a href="#talk" class="gn-icon gn-icon-cog">碎碎念</a></li>
+								<li><a href="#gallary" class="gn-icon gn-icon-help">杂物</a></li>
+								<li>
+									<a href="#etc" class="gn-icon gn-icon-archive">其他</a>
+								</li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				<li><a href="index.html">兔妮与呆呆兽</a></li>
+				<li><ul style="margin-right:2ch;">
+				<!-- <li><a href="http://interimm.org" target="_blank">星际移民中心</a></li> --> <!--
+							<li class="social-weibo"><a href="http://weibo.com/emptymalei" target="_blank"><i class="fa fa-weibo"></i></a></li>
+                            <li class="social-facebook"><a href="https://www.facebook.com/emptymalei" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="https://twitter.com/emptymalei" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-github"><a href="https://github.com/emptymalei" target="_blank"><i class="fa fa-github"></i></a></li>
+                            -->
+                        </ul>	</li>
+			</ul>
+	</div>
+
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+		<div class="slogan">
+			<h1><u class="pn"><ruby>兔妮<rt id="nonecase">ErbB4</rt></ruby></u>与<u class="pn"><ruby>呆呆兽<rt>章鱼喵</rt></ruby></u></h1>
+<div class="container">
+<div class="row" style="color:white;">
+	<div class="col-md-6">
+
+		<p>
+
+
+
+
+<a href="http://time.is/Strasbourg_International_Airport" id="time_is_link" rel="nofollow" style="font-size:20px;color:white;background:black;">Freiburg 时间：</a>
+<span id="Strasbourg_International_Airport_z71f" style="font-size:20px;color:white;background:black"></span>
+<script src="http://widget.time.is/zh.js"></script>
+<script>
+time_is_widget.init(
+	{Strasbourg_International_Airport_z71f:
+		{
+			template:"TIME<br/>DATE<br/>SUN", date_format:"year年monthnum月daynum日, dayname", sun_format:"日出: srhour:srminute 日落: sshour:ssminute<br/>昼长: dlhours时 dlminutes分", coords:"48.5383200,7.6282300"
+		}
+	});
+</script>
+
+
+
+
+
+		</p>
+		<p>
+			<!--
+			<span style="display: block !important; width: 320px; text-align: center; font-family: sans-serif; font-size: 12px;margin-left: auto;margin-right: auto;">
+			<a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:00000.1.07190&bannertypeclick=wu_clean2day" title="Strasbourg, France Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_both_cond&airportcode=LFST&ForcedCity=Strasbourg&ForcedState=France&wmo=07190&language=EN" alt="Find more about Weather in Strasbourg, FR" width="300" /></a></span>
+			-->
+			<!-- <span style="display: block !important; width: 320px; text-align: center; font-family: sans-serif; font-size: 12px;margin-left: auto;margin-right: auto;">
+			<a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:00000.1.10803&bannertypeclick=wu_clean2day" title="Freiburg, Germany Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_metric_cond&airportcode=EDTL&ForcedCity=Freiburg&ForcedState=Germany&wmo=10803&language=EN" alt="Find more about Weather in Freiburg, DL" width="300" /></a></span> -->
+
+<span style="display: block !important; width: 320px; text-align: center; font-family: sans-serif; font-size: 12px;margin-left: auto;margin-right: auto;"><a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:00000.1.10803&bannertypeclick=wu_clean2day" title="Freiburg, Germany Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_metric_cond&airportcode=LFST&ForcedCity=Freiburg&ForcedState=Germany&wmo=10803&language=EN" alt="Find more about Weather in Freiburg, DL" width="300" /></a></span>
+
+		</p>
+	</div>
+	<div class="col-md-6">
+		<p>
+
+			<a href="http://time.is/Albuquerque" id="time_is_link" rel="nofollow" style="font-size:20px;color:white;background:black">Albuquerque 时间：</a>
+<span id="Albuquerque_z12b" style="font-size:20px;color:white;background:black"></span>
+<script src="http://widget.time.is/zh.js"></script>
+<script>
+time_is_widget.init(
+	{
+		Strasbourg_International_Airport_z71f:
+		{
+			template:"TIME<br/>DATE<br/>SUN", date_format:"year年monthnum月daynum日, dayname", sun_format:"日出: srhour:srminute 日落: sshour:ssminute<br/>昼长: dlhours时 dlminutes分", coords:"48.5383200,7.6282300"
+		},
+		Albuquerque_z12b:
+		{
+			template:"TIME<br/>DATE<br/>SUN", date_format:"year年monthnum月daynum日, dayname", sun_format:"日出: srhour:srminute 日落: sshour:ssminute<br/>昼长: dlhours时 dlminutes分", coords:"35.0844900,-106.6511400"
+		}
+	});
+</script>
+
+
+
+
+		</p>
+<p>
+	<span style="display: block !important; width: 320px; text-align: center; font-family: sans-serif; font-size: 12px;margin-left: auto;margin-right: auto;">
+	<a href="http://www.wunderground.com/cgi-bin/findweather/getForecast?query=zmw:87101.1.99999&bannertypeclick=wu_clean2day" title="Albuquerque, New Mexico Weather Forecast" target="_blank"><img src="http://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_clean2day_both_cond&airportcode=KABQ&ForcedCity=Albuquerque&ForcedState=NM&zip=87101&language=EN" alt="Find more about Weather in Albuquerque, NM" width="300" /></a></span>
+</p>
+
+	</div>
+</div>
+</div>
+
+			<a href="#about" class="btn btn-skin scroll">我们的故事</a>
+
+
+
+		</div>
+    </section>
+	<!-- /Section: intro -->
+
+	<!-- Section: about -->
+    <section id="about" class="home-section text-center bg-gray">
+		<div class="heading-about marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+
+					<div class="section-heading">
+					<h2>我们</h2>
+					<p><ruby><em>谈恋爱</em><rt>很幸福</rt></ruby><!--，<ruby><em>要结婚</em><rt>细节讨论</rt></ruby>，<ruby><em>生宝宝</em><rt>先问 ErbB4</rt></ruby>--></p>
+					</div>
+
+<!-- Heart Div Begin -->
+					<div class="col-md-12">
+
+					<div id="chest">
+					<div class="heart left side top"></div>
+		<div class="heart center">&hearts;</div>
+	<div class="heart right side"></div>
+</div>
+
+
+				</div>
+<!-- Heart Div End -->
+
+				</div>
+
+
+<div class="col-md-6" style="border-top:1px solid white;border-bottom:1px solid white;">
+<p>
+
+
+
+
+
 			</div>
-			<div id="loveHeart">
-				<canvas id="garden"></canvas>
-				<div id="words">
-					<div id="messages">
-						Minyue, I have fallen in love with you for
-						<div id="elapseClock"></div>
+			</div>
+		</div>
+
+		<div class="container">
+
+<div class="row">
+<h3>相关链接</h3>
+
+			<div class="col-md-6">
+
+                <a href="./story/index.html" target="_blank"><div class="team boxed-grey">
+                    <div class="inner">
+						<h5>时间线</h5>
+                        <p class="subtitle">一些时间节点</p>
+                    </div>
+
+				</div></a>
+            </div>
+
+			<div class="col-md-6">
+
+                <a href="./15/index.html" target="_blank"><div class="team boxed-grey">
+                    <div class="inner">
+						<h5>十五问</h5>
+                        <p class="subtitle">据称婚姻十五问</p>
+                    </div>
+                </div></a>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+		</div>
+	</section>
+	<!-- /Section: about -->
+
+
+	<!-- Section: Social -->
+    <section id="talk" class="home-section text-center">
+
+		<div class="heading-about marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+
+					<div class="section-heading">
+				 <h2 style="text-align:center;">碎碎念</h2>
+
+<div class="alert alert-warning alert-dismissible" role="alert">
+  <strong>先讲情，后讲理。真诚才能解决问题。记得安全词。</strong>
+</div>
+
+
+				 <h3 style="text-align:center;"><ruby>四法则<rt>章鱼喵想的</rt></ruby></h3>
+				 <div class="list-group">
+  <span class="list-group-item active">
+    <h4 class="list-group-item-heading">第一法则</h4>
+    <p class="list-group-item-text">不得伤害妹子，或因不作为使妹子受到伤害；</p>
+  </span>
+    <span class="list-group-item active">
+    <h4 class="list-group-item-heading">第二法则</h4>
+    <p class="list-group-item-text">任何情况下必须跟妹子坦诚（遇到问题坦诚讨论）；</p>
+  </span>
+  <span class="list-group-item active">
+    <h4 class="list-group-item-heading">第三法则</h4>
+    <p class="list-group-item-text">要让妹子开心，也要让自己开心；</p>
+  </span>
+    <span class="list-group-item active">
+    <h4 class="list-group-item-heading">第四法则</h4>
+    <p class="list-group-item-text">在不违背第一及第三法则下，必须坚持自己的原则。</p>
+  </span>
+</div>
+
 					</div>
-					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+
+				</div>
+
+
+			</div>
+			</div>
+		</div>
+		<div class="container">
+         <!--
+        <div class="row">
+            <div class="col-sm-3 col-md-3">
+
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-code fa-3x"></i>
 					</div>
+					<div class="service-desc">
+						<a href="http://www.douban.com/people/emptymalei" target="_blank"><h5>豆瓣</h5></a>
+						<p>在豆瓣有一帮很有趣的友邻。或许我们从未谋面，但是豆瓣友邻们却是我快乐的源泉。</p>
+					</div>
+                </div>
+
+            </div>
+			<div class="col-sm-3 col-md-3">
+
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-suitcase fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<a href="http://www.guokr.com/i/1769480175/" target="_blank"><h5>果壳</h5></a>
+						<p>果壳网的科学人栏目会提供很多有趣的知识，我也写过稿，但是主要还是阅读。而果壳网的 MOOC 学院则方便 MOOC 学习之用。</p>
+					</div>
+                </div>
+
+            </div>
+			<div class="col-sm-3 col-md-3">
+
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-cog fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<a href="https://github.com/emptymalei" target="_blank"><h5>GitHub</h5></a>
+						<p>咦？是的，我把这个当作社交网站来玩，也曾经约到人一起<em><ruby>吃饭<rt>只是</rt></ruby></em>。</p>
+					</div>
+                </div>
+
+            </div>
+			<div class="col-sm-3 col-md-3">
+
+                <div class="service-box">
+					<div class="service-icon">
+						<i class="fa fa-rocket fa-3x"></i>
+					</div>
+					<div class="service-desc">
+						<a href="http://multiverse.lamost.org/blog/" target="_blank"><h5>时见疏星</h5></a>
+						<p>小小博客一间。主要是<ruby>学术性的小短文<rt>物理，宇宙学，天体物理</rt></ruby>，以及自己写的科幻。</p>
+					</div>
+                </div>
+
+            </div>
+        </div>
+        -->
+
+		</div>
+	</section>
+	<!-- /Section: social -->
+
+
+	<!-- Section: gallary -->
+
+	<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery" data-use-bootstrap-modal="false">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        前一张
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        下一张
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <section id="gallary" class="home-section text-center bg-gray">
+		<div class="heading-works marginbot-50">
+			<div class="container">
+
+
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="section-heading">
+					<h2>杂货铺子</h2>
+					<p></p>
+					</div>
+				</div>
+
+<!-- Swatchbook Begin -->
+<div class="col-md-12">
+<section class="main">
+
+				<div id="sb-container" class="sb-container">
+
+					<div>
+						<span class="sb-icon icon-cog"></span>
+						<h4><span>傻笑</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-flight"></span>
+						<h4><span>静静</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-eye"></span>
+						<h4><span>讲故事</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-install"></span>
+						<h4><span>羞羞</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-bag"></span>
+						<h4><span>录音</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-globe"></span>
+						<h4><span>唱歌</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-picture"></span>
+						<h4><span>写情书</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-video"></span>
+						<h4><span>视频</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-download"></span>
+						<h4><span>电话</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-mobile"></span>
+						<h4><span>认真睡觉</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-camera"></span>
+						<h4><span>认真吃饭</span></h4>
+					</div>
+					<div>
+						<h4><span>幸运签</span></h4>
+						<span class="sb-toggle">打开</span>
+						<h5><span style="color:white;"></span></h5>
+					</div>
+
+
+				</div><!-- sb-container -->
+
+			</section>
+</div>
+<!-- Swatchbook End -->
+
+
+
+			</div>
+			</div>
+
+		</div>
+
+		<div class="container">
+
+
+
+
+
+		</div>
+	</section>
+
+	<!-- /Section: gallary -->
+
+	<!-- Section: contact -->
+    <section id="etc" class="home-section text-center">
+		<div class="heading-contact marginbot-50">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+
+					<div class="section-heading">
+					<h2>其他</h2>
+					<p></p>
+					</div>
+
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="container">
+<div class="row">
+					<div class="col-md-6">
+
+                <a href="http://www.worldtimebuddy.com/" target="_blank"><div class="team boxed-grey">
+                    <div class="inner">
+						<h5>Timebuddy</h5>
+                        <p class="subtitle">方便用来安排时间</p>
+                    </div>
+                </div></a>
+
+            </div>
+
+
+			<div class="col-md-6">
+
+                <div class="team boxed-grey">
+                    <a href=""><div class="inner">
+						<h5>待填</h5>
+                        <p class="subtitle">待填</p>
+                    </div></a>
+                </div>
+
+            </div>
+
+		</div>
+
+		</div>
+
+
+
+
+	</section>
+	<!-- /Section: contact -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+		<p></p>
+					<p>Copyright &copy; 2015 兔妮&呆呆兽 | 感谢 Ninestars - by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
+
 				</div>
 			</div>
 		</div>
-		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
-		</div>
-	</div>
-	<script type="text/javascript">
-		var offsetX = $("#loveHeart").width() / 2;
-		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
-		
-		if (!document.createElement('canvas').getContext) {
-			var msg = document.createElement("div");
-			msg.id = "errorMsg";
-			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
-			document.body.appendChild(msg);
-			$("#code").css("display", "none")
-			$("#copyright").css("position", "absolute");
-			$("#copyright").css("bottom", "10px");
-		    document.execCommand("stop");
-		} else {
-			setTimeout(function () {
-				startHeartAnimation();
-			}, 5000);
+	</footer>
 
-			timeElapse(together);
-			setInterval(function () {
-				timeElapse(together);
-			}, 500);
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/gnmenu.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/stellar.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
 
-			adjustCodePosition();
-			$("#code").typewriter();
-		}
-	</script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+	<script src="js/bootstrap-image-gallery.min.js"></script>
+
+<!-- Swatchbook Begin -->
+<script type="text/javascript" src="js/jquery.swatchbook.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$( '#sb-container' ).swatchbook( {
+					// number of degrees that is between each item
+					angleInc : 15,
+					neighbor : 15,
+					// if it should be closed by default
+					initclosed : true,
+					// index of the element that when clicked, triggers the open/close function
+					// by default there is no such element
+					closeIdx : 11
+				} );
+
+			});
+		</script>
+<!-- Swatchbook END -->
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49034078-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </body>
+
 </html>
