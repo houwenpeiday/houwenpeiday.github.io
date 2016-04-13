@@ -32,7 +32,7 @@ $(function () {
 	// exec function every 500 milliseconds
 	setInterval(function () {
 		timeElapse(together);
-	}, 1000);
+	}, 1);
 
     // setup garden
 	$animation = $("#animation");
