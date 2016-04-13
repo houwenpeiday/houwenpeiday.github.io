@@ -1,1 +1,0 @@
-A Tip Cards style tool to show whether you are ready for marrage.
