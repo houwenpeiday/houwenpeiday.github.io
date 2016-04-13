@@ -16,9 +16,9 @@ $(function () {
 	$("#code").typewriter();
 
 	/* start the animation */
-
-	startButterflyAnimation();
-	
+	setTimeout(function () {
+		startButterflyAnimation();
+	}, 0);
 
 	/* start the counter */
 
