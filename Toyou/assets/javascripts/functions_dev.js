@@ -18,7 +18,7 @@ $(function () {
 	/* start the animation */
 	setTimeout(function () {
 		startButterflyAnimation();
-	}, 60);
+	}, 0);
 
 	/* start the counter */
 
