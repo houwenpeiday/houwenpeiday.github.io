@@ -72,6 +72,7 @@ body {
 	float: left;
 	width: 440px;
 	height: 645px;
+    padding-left: 20px;
 }
 #code pre code {
 	background: none;

@@ -1,13 +1,4 @@
-whatever anyway 
-
-
-
-
------
-## The original noLove repo
-
 ### Intro
-
 
 A HTML5 page using codes to express the author's feelings of not having a boyfriend. The codes appear in a typewritter kindof fashion (with sound). Then a butterfly is drawn on the canvas made of flower pedals. It is quite dreamy. A timer then emerges saying that how many seconds the author's been waiting for true love to show up. This work is inspired by [Hackerzhou](https://github.com/hackerzhou)'s [love page](http://hackerzhou.me/love).
 
