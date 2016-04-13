@@ -18,11 +18,7 @@
 </style>
 <a href="https://github.com/daisygao/noLove" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 <div id="content">
-    <audio id="sound">
-        <source src="{{urls.media}}/type.ogg" type="audio/ogg" />
-        <source src="{{urls.media}}/type.mp3" type="audio/mpeg" />
-        Your browser does not support HTML5 audio.
-    </audio>
+    
     <div id="code">
 
     /* I am a girl named Daisy. I don't have a boyfriend. */
