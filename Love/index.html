@@ -38,34 +38,9 @@ Boy i = new Boy(&quot;You Name&quot;);
 Girl u = null;
 i.state = |Single> &#8855; |Boy>
 
-/* The Hamiltonian that descibes my evloution is */
-/* a function of the Single state */
-i.Hamiltonian = function(|Single>)
 
-/* Obviously this Hamiltonian commutes with my state ... */
-[ i.Hamiltonian, i.&#961; ] = 0
 
-/* The dynamics of me becomes so simple and lonely ... */
-&#8706;<sub>t</sub> i.&#961; = 0
-
-/* And I am not complete */
-I ! = tensorProduct(i.gender, i.gender*)
-
-/* A single girl Hamiltonian added to mine makes a new Hamiltonian */
-/* which will evolve both us to non-single states */
-[ i.Hamiltonian + u.Hamiltonian + interaction(u, i), i.&#961; + u.&#961; ] != 0
-u.&#961;(t<sub>f</sub>) = tensorProduct(inLove, inLove*)
-i.&#961;(t<sub>f</sub>) = tensorProduct(inLove, inLove*)
-
-/* And we two will be complete */
-/* |Boy &gt; &lt; Boy| + |Girl &gt; &lt; Girl| is complete */
-I = tensorProduct(i.gender, i.gender) + tensorProduct(u.gender, u.gender)
-
-/* What's more, the following statement returns &quot; True &quot; */
-i.sex + u.sex == sex
-
-/* So talk to me */
-i.address = <a href="#" target="_blank">[Your URL HERE]</a></code></pre>
+</code></pre>
 
 
     
